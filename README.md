@@ -88,10 +88,11 @@ La rúbrica la maneja el organizador del challenge. Los cinco rubros evaluados c
 
 | Recurso | Link |
 |---------|------|
-| PokéAPI Docs | https://pokeapi.co/docs/v2 |
-| IBM Bob Docs | https://bob.ibm.com/docs/ide |
-| Modos de Bob | https://medium.com/@victor.chequer/ibm-bob-modes-vs-skills-the-complete-guide-to-reliable-ai-assisted-development-c5d528ff4fac |
-| MCP con Bob | https://medium.com/@victor.chequer/ibm-bob-driven-mcp-in-practice-concepts-use-cases-and-building-a-java-quarkus-mcp-server-8b43f379c051 |
+| 🎮 PokéAPI Docs | https://pokeapi.co/docs/v2 |
+| 📖 IBM Bob Docs | https://bob.ibm.com/docs/ide |
+| 🆓 Cómo obtener tu prueba gratuita de Bob (30 días) | https://medium.com/@victor.chequer/how-to-get-a-free-30-day-ibm-bob-trial-step-by-step-guide-5d2cdddea8f0 |
+| 🧩 Modos y Skills de Bob | https://medium.com/@victor.chequer/ibm-bob-modes-vs-skills-the-complete-guide-to-reliable-ai-assisted-development-c5d528ff4fac |
+| 🔌 MCP con Bob | https://medium.com/@victor.chequer/ibm-bob-driven-mcp-in-practice-concepts-use-cases-and-building-a-java-quarkus-mcp-server-8b43f379c051 |
 
 ---
 
