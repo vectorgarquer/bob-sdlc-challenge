@@ -12,7 +12,7 @@
 
 El **Profesor Oak** necesita un sistema para que los entrenadores Pokémon puedan **armar y gestionar su equipo de batalla**. Tu equipo deberá construirlo en **~60 minutos** usando **IBM Bob como copiloto en cada etapa del SDLC**.
 
-> ⚡ El objetivo no es solo que el código funcione — es demostrar cómo **Bob participó en cada decisión** del ciclo de vida de desarrollo de software.
+> ⚡ El objetivo no es solo que el código funcione — es demostrar cómo **Bob participó en cada decisión** del ciclo de vida del desarrollo de software.
 
 ---
 
