@@ -13,7 +13,7 @@
 
 ## 🧩 El Reto
 
-El **Centro de Monitoreo Planetario** necesita un sistema para rastrear y analizar **objetos cercanos a la Tierra (NEOs)**. Tu equipo deberá construirlo en **~60 minutos** usando **IBM Bob como un asistente de IA para el ciclo de vida del desarrollo de sistemas**.
+El **Centro de Monitoreo Planetario** necesita un sistema para rastrear y analizar **objetos cercanos a la Tierra (NEOs)**. Tu equipo deberá construirlo en **~60 minutos** usando **IBM Bob como un asistente de IA para el ciclo de vida del desarrollo de software**.
 
 > El objetivo no es solo que el código funcione — es demostrar cómo **Bob participó en cada decisión** del ciclo de vida del desarrollo de software.
 
