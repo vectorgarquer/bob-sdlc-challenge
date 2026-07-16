@@ -1,4 +1,4 @@
-# 🏆 Rúbrica de Evaluación — PokéDev Challenge
+# 🏆 Rúbrica de Evaluación — NeoTracker Challenge
 
 **Puntaje total: 100 puntos**
 
