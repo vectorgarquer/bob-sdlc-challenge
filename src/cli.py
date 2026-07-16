@@ -31,9 +31,9 @@ def cmd_fetch(args):
     elif args.sort == "velocity":
         neos = sort_by_velocity(neos, descending=False)
 
-    print(f"\n📡 {len(neos)} NEOs encontrados ({args.start} → {args.end})\n")
+    print(f"\n[NASA] {len(neos)} NEOs encontrados ({args.start} -> {args.end})\n")
     for neo in neos:
-        hazard = "⚠️ " if neo.is_potentially_hazardous else "   "
+        hazard = "[!] " if neo.is_potentially_hazardous else "    "
         print(
             f"{hazard}{neo.name:<40} "
             f"Ø {neo.estimated_diameter_km_avg:.4f} km  "
@@ -46,7 +46,7 @@ def cmd_fetch(args):
 def cmd_danger(args):
     neos = fetch_neos(args.start, args.end, args.key)
     most_dangerous = find_most_dangerous(neos)
-    print(f"\n☄️  Asteroide más peligroso ({args.start} → {args.end}):\n")
+    print(f"\n[DANGER] Asteroide mas peligroso ({args.start} -> {args.end}):\n")
     print(json.dumps(most_dangerous.to_dict(), indent=2, ensure_ascii=False))
 
 
@@ -54,25 +54,25 @@ def cmd_watch_add(args):
     neos = fetch_neos(args.start, args.end, args.key)
     neo_map = {n.neo_id: n for n in neos}
     if args.neo_id not in neo_map:
-        print(f"❌ NEO '{args.neo_id}' no encontrado en el rango {args.start} → {args.end}")
+        print(f"[ERR] NEO '{args.neo_id}' no encontrado en el rango {args.start} -> {args.end}")
         sys.exit(1)
     result = add_to_watchlist(neo_map[args.neo_id])
-    icon = "✅" if result["status"] == "added" else "⚠️ "
+    icon = "[OK]" if result["status"] == "added" else "[DUP]"
     print(f"{icon} {result['status'].upper()}: {result['name']} ({result['id']})")
 
 
 def cmd_watch_remove(args):
     result = remove_from_watchlist(args.neo_id)
-    icon = "✅" if result["status"] == "removed" else "❌"
+    icon = "[OK]" if result["status"] == "removed" else "[ERR]"
     print(f"{icon} {result['status'].upper()}: {result['id']}")
 
 
 def cmd_watch_list(_args):
     items = list_watchlist()
     if not items:
-        print("📋 Lista de seguimiento vacía.")
+        print("Lista de seguimiento vacia.")
         return
-    print(f"\n📋 Lista de seguimiento ({len(items)} asteroides):\n")
+    print(f"\nLista de seguimiento ({len(items)} asteroides):\n")
     for item in items:
         print(json.dumps(item, indent=2, ensure_ascii=False))
 
@@ -80,7 +80,7 @@ def cmd_watch_list(_args):
 def build_parser():
     parser = argparse.ArgumentParser(
         prog="neotracker",
-        description="🛰️  NeoTracker — Centro de Monitoreo de Objetos Cercanos a la Tierra",
+        description="NeoTracker - Centro de Monitoreo de Objetos Cercanos a la Tierra",
     )
     parser.add_argument("--key", default="DEMO_KEY", help="NASA API key (default: DEMO_KEY)")
     sub = parser.add_subparsers(dest="command", required=True)
